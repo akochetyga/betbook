@@ -7,7 +7,7 @@ Imagine your component has multiple variations of rendering for different brands
 ```javascript
 const LoginForm = (props) => {
   const showTermsAndConditionsLink = () => {
-    if (!props.brand === 'com') {
+    if (!props.brand === 'ru') {
       return null;
     }
     
