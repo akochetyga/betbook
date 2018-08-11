@@ -46,6 +46,7 @@ const LoginForm = (props) => {
     if (props.config.terms.show === false) {
       return null;
     }
+    
     return <a href={ props.config.terms.href }>props.config.terms.title</a>;
   };
   
