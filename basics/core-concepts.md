@@ -195,7 +195,7 @@ This will allow you to easily switch between implementations depending on the co
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Splitting out the core components \(and not only components\) logic between files and including them on demand:
+Splitting out the core components \(and not only components\) logic between files and including them on demand does the following:
 
 * simplifies your code;
 * makes your code cleaner;
@@ -210,7 +210,7 @@ You may ask _"Why can't I configure everything in a single configuration?"_. The
 Also, same feature toggles might be used by different teams/components at the same time. For instance, if you want to disable login functionality both on UI and server sides.
 {% endhint %}
 
-Feature toggling mechanism topic is covered in more details in this section [Flip-Flop](../reference/flip-flop.md).
+Feature toggling topic is covered in more details in this section [Flip-Flop](../reference/flip-flop.md).
 
 ## Single Artifact
 
