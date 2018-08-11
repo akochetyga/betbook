@@ -19,7 +19,9 @@ Please make sure you have an access to this namespace.
 
 We are using default NPM capabilities for running tasks and managing project dependencies. Minimum required [NPM](https://www.npmjs.com/) version is v6.1.0, [NodeJS](https://nodejs.org/en/) - v10.6.0.
 
+{% hint style="info" %}
 Some packages are stored within [http://npm.betlab.private](http://npm.betlab.private) registry \(e.g. [ui-kit](http://ui-kit.com)\) that is only accessible by VPN \(or from office\).
+{% endhint %}
 
 ### Docker
 
