@@ -33,7 +33,7 @@ Get the project sources from [https://git.betlab.com/betbook/fe](https://git.bet
 $ npm install
 ```
 
-### Running The Application
+## Running The Application
 
 Running the application locally is easy. First, you need to get [Wiremock](http://Wiremock.com) running on your local machine:
 
