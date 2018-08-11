@@ -43,7 +43,7 @@ Running the application locally is easy. First, you need to get [Wiremock](http:
 $ npm wiremock:start
 ```
 
-This tool mocks server API and simplifies the development process.
+This service runs in a separate Docker container and provides mocked server API, that simplifies the development process. By default, all API requests from your application will go through this service.
 
 Once you get [Wiremock](http://Wiremock.com) up and running you can start the application itself:
 
