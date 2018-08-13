@@ -1,10 +1,3 @@
----
-description: >-
-  This is a step-by-step guide that will help you to setup the project and to
-  run the application on your local machine. Please follow the instructions
-  below to get familiar with the basic concepts.
----
-
 # Getting Started
 
 ## Prerequisites
