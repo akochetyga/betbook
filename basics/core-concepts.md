@@ -9,14 +9,14 @@ Imagine your component has multiple variations of rendering for different brands
 ```javascript
 const LoginForm = (props) => {
   const showTermsAndConditionsLink = () => {
-    if (!props.brand === 'ru') {
+    if (props.brand === 'ge') {
       return null;
     }
     
     const links = { 'com': '/terms-and-conditions', 'cy': '/terms' };
     const link = links[props.brand];
     
-    return <a href={ link }>Terms and Conditions</a>;
+    return <a href={link}>Terms and Conditions</a>;
   };
   
   return (
@@ -24,7 +24,7 @@ const LoginForm = (props) => {
       <input type="text" name="login" />
       <input type="password" name="password" />
       <input type="submit" name="login" />
-      { showTermsAndConditionsLink() }
+      {showTermsAndConditionsLink()}
     </form>
   );
 };
@@ -47,7 +47,7 @@ const LoginForm = (props) => {
       return null;
     }
     
-    return <a href={ props.config.terms.href }>props.config.terms.title</a>;
+    return <a href={props.config.terms.href}>props.config.terms.title</a>;
   };
   
   return (
@@ -55,7 +55,7 @@ const LoginForm = (props) => {
       <input type="text" name="login" />
       <input type="password" name="password" />
       <input type="submit" name="login" />
-      { showTermsAndConditionsLink() }
+      {showTermsAndConditionsLink()}
     </form>
   );
 };
@@ -97,7 +97,7 @@ Let's say you want to toggle some particular implementation of the application l
 {% code-tabs-item title="LoginForm.jsx" %}
 ```javascript
 const LoginForm = (props) => {
-  const submit = (event) => {
+  const onSubmit = (event) => {
     if (props.brand === 'com') {
       // Experimental login feature.
       const isValid = api.validate(event);
@@ -111,7 +111,7 @@ const LoginForm = (props) => {
   };
   
   return (
-    <form onSumbit={ sumbit }>
+    <form onSumbit={onSubmit}>
       <input type="text" name="login" />
       <input type="password" name="password" />
       <input type="submit" name="login" />
@@ -164,12 +164,12 @@ export const resolveLoginFeatureImplementation = (params) => {
 {% code-tabs-item title="LoginForm.jsx" %}
 ```javascript
 const LoginForm = (props) => {
-  const submit = (event) => {
+  const onSubmit = (event) => {
     api.resolveLoginFeatureImplementation(event);
   };
   
   return (
-    <form onSumbit={ sumbit }>
+    <form onSumbit={onSubmit}>
       <input type="text" name="login" />
       <input type="password" name="password" />
       <input type="submit" name="login" />
