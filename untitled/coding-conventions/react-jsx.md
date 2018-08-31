@@ -2,9 +2,9 @@
 description: 'Version: 1.0.0'
 ---
 
-# React/JSX
+# React/JSX Style Guide
 
-Based on: [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/commit/a12dec90d173464a3fc4e4536b8c6f639fb93236#diff-266a1f7c2e2345169d3bc448da45eae6).
+Based on: [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/blob/a12dec90d173464a3fc4e4536b8c6f639fb93236/react/README.md).
 
 _A mostly reasonable approach to React and JSX._
 

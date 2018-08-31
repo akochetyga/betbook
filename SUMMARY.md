@@ -20,7 +20,7 @@
   * [Behaviors](untitled/behaviors.md)
   * [Architecture](untitled/architecture.md)
   * [Coding Conventions](untitled/coding-conventions/README.md)
-    * [React/JSX](untitled/coding-conventions/react-jsx.md)
+    * [React/JSX Style Guide](untitled/coding-conventions/react-jsx.md)
 * [Advanced](advanced.md)
 * [Reference](reference/README.md)
   * [Components](reference/components/README.md)

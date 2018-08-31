@@ -89,7 +89,7 @@ More on this can be found in the [Config Manager](../reference/config-manager.md
 
 ## Feature Toggling
 
-In previous section the problem of configuring the representation of the component has been covered. Feature toggling, by turn, allows you make your application more flexible from the behavioral point of view.
+In previous section the problem of configuring the representation of the component has been covered. Feature toggling, by turn, allows you to make your application more flexible from the behavioral point of view.
 
 Let's say you want to toggle some particular implementation of the application logic based on various conditions \(e.g. current user status, current brand, platform, etc.\):
 
@@ -122,7 +122,7 @@ const LoginForm = (props) => {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-In this example some experimental login feature has been introduce for a specific brand. In order to enable this feature for all brands and to get rid of old implementation, you'll have to update you source code, re-build and then re-deploy the application artifact. Instead, you could use the following approach:
+In this example some experimental login feature has been introduced for a specific brand. In order to enable this feature for all brands and to get rid of old implementation, you'll have to update you source code, re-build and then re-deploy the application artifact. Instead, you could use the following approach:
 
 {% code-tabs %}
 {% code-tabs-item title="login.js" %}
