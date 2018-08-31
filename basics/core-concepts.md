@@ -209,6 +209,8 @@ Feature toggles by nature are intended to be used by release managers to solve b
 You may ask _"Why can't I configure everything in a single configuration?"_. The answer is simple: features toggles \(or feature flags\) can have impact on the whole build process \(e.g. eliminating a set of non-required implementations/modules from the bundle\), while the components configuration is intended to be used for run-time configuration only and it can't be used for toggling the application behavior.
 
 Also, same feature toggles might be used by different teams/components at the same time. For instance, if you want to disable login functionality both on UI and server sides.
+
+In general, feature toggles can be treated as a higher-level application configuration, while components configuration is intended for for fine tuning.
 {% endhint %}
 
 Feature toggling topic is covered in more details in this section [Flip-Flop](../reference/flip-flop.md).
