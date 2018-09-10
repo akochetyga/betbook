@@ -6,7 +6,7 @@ Betbook is a big project that consists of a set of smaller components and addres
 
 ### Betbook FE
 
-Betbook FE is a core front-end component of the Betbook project. It has arisen from legacy air-pm project as brand new solution that introduces such major improvements as configurable components, feature-toggling, improved CI/CD and modern technology stack \(React, Redux, RxJS, Storybook, Jest/Enzyme and many others\).
+Betbook FE is a core front-end component of the Betbook project. It has arisen from legacy air-pm project as a brand new solution that introduces such major improvements as configurable components, feature-toggling, improved CI/CD and modern technology stack \(React, Redux, RxJS, Storybook, Jest/Enzyme and many others\).
 
 ![pipeline status](https://git.betlab.com/betbook/fe/badges/master/pipeline.svg)
 
