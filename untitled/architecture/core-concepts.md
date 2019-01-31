@@ -38,5 +38,13 @@ Please check [Configurable Components](https://betlab.gitbook.io/betbook/~/edit/
 
 ## Feature-Toggling Support
 
+Feature-flags are a time-honored way to control the capabilities of an application or service in a large decisive way.
+
+Our previous experience in delivering different features for multiple brands forced us to introduce this mechanism in to our CI/CD pipeline. It allows us to write code, that can reside in main artifact and can easily be toggled on demand for some particular brand, user group or using any other predicate, supported by our application.
+
+This approach allows us to follow [trunk based development](https://trunkbaseddevelopment.com) approach with short lived feature branches and flexible application configuration, that doesn't require frequent re-deploys.
+
+More information on this topic can be found in this section: [Feature-Toggling](../selectors/featuretoggling.md).
+
 
 
