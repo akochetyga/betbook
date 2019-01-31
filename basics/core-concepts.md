@@ -87,7 +87,7 @@ That's where the [Config Manager](../reference/config-manager.md) service comes 
 
 More on this can be found in the [Config Manager](../reference/config-manager.md) section.
 
-## Feature Toggling
+## Feature-Toggling
 
 In previous section the problem of configuring the representation of the component has been covered. Feature toggling, by turn, allows you to make your application more flexible from the behavioral point of view.
 
