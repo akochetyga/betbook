@@ -14,9 +14,23 @@ Any data retrieval logic and/or UI events \(e.g. mouse clicks, key presses, scro
 
 ## Normalized Application State
 
+Most of the UI applications are usually split into tons of components, each of which requires its own view-model. This could lead to a mess in the overall application data structure.
 
+For instance, you have two view-models: one for My Account page and another - for a small user box with a name and a balance in the site header. On each data update \(balance or user name\) you have to update both of these models. Developers usually tend to create separate reducers, that handle these changes, update the state and pass this data to the components.
+
+While this approach fully decouples your components and their state, in a long run you will eventually face with a big problem: you'll have to handle all events, related to your domain model, in all of your view-models \(or reducers\). This will eventually lead to the code duplication, poor code maintainability and unpredictable side-effects.
+
+In order to eliminate this problem, we decided to store all domain models in a normalized state. Each reducer in our application only handles actions, related to some particular domain model \(e.g. user\). We are trying to completely avoid handling actions from another domain.
+
+This way, we can be sure, that our original \(pure\) domain models contain valid data and this data can be represented identically by any UI component. Query layer in our application contains a lot of selectors, so that complex components can fetch all required data from different domain models and project it to any suitable structure.
 
 ## Decoupled Data Access Layer
+
+One of the most challenging issues in modern applications is a client-server communication. Very often contracts change or data structure received from server doesn't fully fit UI needs. Some fields might be missing, have wrong or outdated names, contain wrong values or be of incorrect data-types. This leads to a hell of various mappers, proxies, converters and formatter throughout the code.
+
+In order to make the application logic clearer, we decided to move as much of these routines as possible to a separate layer. These routines might be implemented as re-usable helper function, inline formatter, etc.. They can reside in a dedicated modules or right within services, that perform data fetching.
+
+The main idea is to keep the internal application state consistent and well-structure. This state should be optimized for UI only.
 
 ## Reactive Business Logic
 
