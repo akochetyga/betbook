@@ -44,7 +44,7 @@ Our previous experience in delivering different features for multiple brands for
 
 This approach allows us to follow [trunk based development](https://trunkbaseddevelopment.com) approach with short lived feature branches and flexible application configuration, that doesn't require frequent re-deploys.
 
-More information on this topic can be found in this section: [Feature-Toggling](../selectors/featuretoggling.md).
+More information on this topic can be found in this section: [Feature-Toggling](../../basics/core-concepts.md#feature-toggling).
 
 
 
