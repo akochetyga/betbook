@@ -1,4 +1,4 @@
 # General Overview
 
-![](../../.gitbook/assets/betbook-fe-architecture-general-overview.png)
+![](../../.gitbook/assets/betbook-fe-architecture.png)
 
