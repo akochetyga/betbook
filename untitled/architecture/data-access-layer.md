@@ -18,7 +18,7 @@ Domain reducers mostly work with data, that comes from server \(e.g. feed\). And
 
 Services are just wrappers around generic I/O operations \(REST requests, Websockets streams, localStorage I/O's, etc.\). They normally provide friendly API for reading/writing models data. Most of the services can be both generic and feature specific.
 
-Each service usually get's invoked directly from action creator or middleware and should normally trigger corresponding actions on operation success or failure.
+Each service usually gets invoked directly from action creator or middleware and should normally trigger corresponding actions on operation success or failure.
 
 ![](../../.gitbook/assets/betbook-fe-architecture-dal.png)
 

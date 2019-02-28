@@ -16,7 +16,7 @@ In our application we are going to support three variations: mobile, desktop and
 
 All components generally can be split into three categories: shared, feature specific and [HOC](https://reactjs.org/docs/higher-order-components.html)'s.
 
-Shared components are intended to be use throughout the whole application \(e.g. odds\).
+Shared components are intended to be used throughout the whole application \(e.g. odds\).
 
 Feature specific components are usually used once for some particular feature \(e.g. betslip\) and, therefore, there is no way \(and no need\) to re-use them.
 

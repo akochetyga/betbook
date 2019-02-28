@@ -16,7 +16,7 @@ As you can see, each layer only contains limited amount of modules, used in our 
 
 **Behavior** module can perform reads from **Data Access Layer** \(**DAL**\) by accessing Redux store object or by calling services API. Data can be passed to these services too.
 
-**Query Layer** can only read data from **DAL**, transform it \(if required\) and its output then can be consumed by **UI Layer** or by **Behavior** module.
+**Query Layer** can read the data from **DAL**, transform it \(if required\) and its output then can be consumed by **UI Layer** or by **Behavior** module. No writes to the application state are allowed here.
 
 **UI Layer** just consumes data provided by **Query Layer** and invoke actions defined in **Behavior** module.
 
