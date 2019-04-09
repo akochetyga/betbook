@@ -83,9 +83,9 @@ Having this approach implemented, you can easily configure your component in a r
 
 Different configurations for different brands and/or platforms can be stored in different files. And instead of resolving current brand and/or platform directly on the client side, you might also want to use a dedicated service, that does this job for you and provides proper configuration automatically.
 
-That's where the [Config Manager](../reference/config-manager.md) service comes in. It stores and serves predefined configuration files provided by CMS, manually or by any other service.
+That's where the [Config Manager](../reference/config-manager/) service comes in. It stores and serves predefined configuration files provided by CMS, manually or by any other service.
 
-More on this can be found in the [Config Manager](../reference/config-manager.md) section.
+More on this can be found in the [Config Manager](../reference/config-manager/) section.
 
 ## Feature-Toggling
 
