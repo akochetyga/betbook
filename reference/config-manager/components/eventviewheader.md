@@ -27,7 +27,7 @@
 
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| feedSportId | String | Yes | TBD. |
-| backgroundUrl | String | Yes | TBD. |
-| sportName | String | Yes | TBD. |
+| feedSportId | String | Yes | Sport ID from the Air Backend. |
+| backgroundUrl | String | Yes | Desired background image URL for sport. |
+| sportName | String | Yes | Will be **deprecated** soon. |
 
